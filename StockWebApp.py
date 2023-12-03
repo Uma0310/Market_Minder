@@ -13,7 +13,7 @@ st.write("""
 Visually show data from 2018-11-13 to 2023-11-12
 """)
 
-image = Image.open("D:/PROJECT/Image6.jpg")
+image = Image.open("./PROJECT/Image6.jpg")
 st.image(image, use_column_width=True)
 
 #create a sidebar header
@@ -79,47 +79,47 @@ def get_data(symbol, start,end):
 
     #Load the data
     if symbol.upper() == 'MARUTI':
-        df=pd.read_csv("D:/PROJECT/MARUTI.csv")
+        df=pd.read_csv("./PROJECT/MARUTI.csv")
     elif symbol.upper() == 'ASIANPAINT':
-        df=pd.read_csv("D:/PROJECT/ASIANPAINT.csv")
+        df=pd.read_csv("./PROJECT/ASIANPAINT.csv")
     elif symbol.upper() == 'BHARTIARTL':
-        df=pd.read_csv("D:/PROJECT/BHARTIARTL.csv")
+        df=pd.read_csv("./PROJECT/BHARTIARTL.csv")
     elif symbol.upper() == 'HDFCBANK':
-        df=pd.read_csv("D:/PROJECT/HDFCBANK.csv")
+        df=pd.read_csv("./PROJECT/HDFCBANK.csv")
     elif symbol.upper() == 'ICICIBANK':
-        df=pd.read_csv("D:/PROJECT/ICICIBANK.csv")
+        df=pd.read_csv("./PROJECT/ICICIBANK.csv")
     elif symbol.upper() == 'INFY':
-        df=pd.read_csv("D:/PROJECT/INFY.csv")
+        df=pd.read_csv("./PROJECT/INFY.csv")
     elif symbol.upper() == 'ITC':
-        df=pd.read_csv("D:/PROJECT/ITC.csv")
+        df=pd.read_csv("./PROJECT/ITC.csv")
     elif symbol.upper() == 'KOTAKBANK':
-        df=pd.read_csv("D:/PROJECT/KOTAKBANK.csv")
+        df=pd.read_csv("./PROJECT/KOTAKBANK.csv")
     elif symbol.upper() == 'NESTLEIND':
-        df=pd.read_csv("D:/PROJECT/NESTLEIND.csv")
+        df=pd.read_csv("./PROJECT/NESTLEIND.csv")
     elif symbol.upper() == 'POWERGRID':
-        df=pd.read_csv("D:/PROJECT/POWERGRID.csv")
+        df=pd.read_csv("./PROJECT/POWERGRID.csv")
     elif symbol.upper() == 'PVR':
-        df=pd.read_csv("D:/PROJECT/PVR.csv")
+        df=pd.read_csv("./PROJECT/PVR.csv")
     elif symbol.upper() == 'RELIANCE':
-        df=pd.read_csv("D:/PROJECT/RELIANCE.csv")
+        df=pd.read_csv("./PROJECT/RELIANCE.csv")
     elif symbol.upper() == 'SBIN':
-        df=pd.read_csv("D:/PROJECT/SBIN.csv")
+        df=pd.read_csv("./PROJECT/SBIN.csv")
     elif symbol.upper() == 'TATAMOTORS':
-        df=pd.read_csv("D:/PROJECT/TATAMOTORS.csv")
+        df=pd.read_csv("./PROJECT/TATAMOTORS.csv")
     elif symbol.upper() == 'ULTRACEMCO':
-        df=pd.read_csv("D:/PROJECT/ULTRACEMCO.csv")
+        df=pd.read_csv("./PROJECT/ULTRACEMCO.csv")
     elif symbol.upper() == 'HDFCBANK':
-        df=pd.read_csv("D:/PROJECT/HDFCBANK.csv")
+        df=pd.read_csv("./PROJECT/HDFCBANK.csv")
     elif symbol.upper() == 'BAJAJ-AUTO':
-        df=pd.read_csv("D:/PROJECT/BAJAJ-AUTO.csv")
+        df=pd.read_csv("./PROJECT/BAJAJ-AUTO.csv")
     elif symbol.upper() == 'TCS':
-        df=pd.read_csv("D:/PROJECT/TCS.csv")
+        df=pd.read_csv("./PROJECT/TCS.csv")
     elif symbol.upper() == 'WIPRO':
-        df=pd.read_csv("D:/PROJECT/WIPRO.csv")
+        df=pd.read_csv("./PROJECT/WIPRO.csv")
     elif symbol.upper() == 'LT':
-        df=pd.read_csv("D:/PROJECT/LT.csv")
+        df=pd.read_csv("./PROJECT/LT.csv")
     elif symbol.upper() == 'SUZLON':
-        df=pd.read_csv("D:/PROJECT/SUZLON.csv")
+        df=pd.read_csv("./PROJECT/SUZLON.csv")
 
     else:
         df = pd.DataFrame(columns= ['Date','Open','High','Low','Close','Adj Close','Volume'])
@@ -134,7 +134,7 @@ def get_data(symbol, start,end):
     end_row = 0
 
     #start the date form the top of the data set and go down to see if the 
-    #to see if the start date is less than or eql to the dataset
+    #to see if the start date is less than or eql to teh dataset
 
     for i in range(0, len(df)):
         if start <= pd.to_datetime(df['Date'][i]):
